@@ -1,29 +1,29 @@
 @font-face {
-    src: url(fonts/Helvetica\ Neue\ LT\ Com\ 77\ Bold\ Condensed.ttf);
+    src: url(Services_fonts/Helvetica\ Neue\ LT\ Com\ 77\ Bold\ Condensed.ttf);
     font-family: helvetica-neue; 
   }
 @font-face {
-    src: url(fonts/Raleway-Light.ttf);
+    src: url(Services_fonts/Raleway-Light.ttf);
     font-family: raleway; /*HEADER*/
   }
 @font-face {
-    src: url(fonts/Calligraffitti-Regular.ttf);
+    src: url(Services_fonts/Calligraffitti-Regular.ttf);
     font-family: callig; /*BIG TEXT - WHAT, HOW, WHO*/
   } 
 @font-face {
-    src: url(fonts/Roboto-Light.ttf);
+    src: url(Services_fonts/Roboto-Light.ttf);
     font-family: roboto-light; /*FOR DESCRIPTIONS*/
   }
 @font-face {
-    src: url(fonts/NotoSansJP-Regular.ttf);
+    src: url(Services_fonts/NotoSansJP-Regular.ttf);
     font-family: SansJP; /*DROPDOWN BUTTONS*/
   }
 @font-face {
-    src: url(fonts/Freeman-Regular.ttf);
+    src: url(Services_fonts/Freeman-Regular.ttf);
     font-family: freeman; /*DROPDOWN BUTTONS*/
   } 
 @font-face {
-    src: url(fonts/RedditSans-Regular.ttf);
+    src: url(Services_fonts/RedditSans-Regular.ttf);
     font-family: SansJP; /*DROPDOWN BUTTONS*/
   } 
 
