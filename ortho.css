@@ -500,9 +500,13 @@ header ul li:hover .submenu a{
     top: 100%;
     padding: 0px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 23vw;
     color: white;
     
+}
+
+#break2{
+    margin-left: 20vw;
 }
 .break-container h3{
     font-size: 26px;

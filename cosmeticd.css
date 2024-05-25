@@ -487,20 +487,26 @@ header ul li:hover .submenu a{
 .noise-break{
     width: 100vw;
     max-width: 450vw;
-    height: 55vh;
-    margin-top: 150px;
+    height: 35vh;
+    margin-top: -50px;
+    margin-bottom: -220px;
 }
 .break-container{
     position: relative;
 }
 .break-text{
     position: absolute;
-    top: 60%;
+    top: 100%;
     padding: 10px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 23vw;
     color: white;
 }
+
+#break2{
+  margin-left: 20vw;
+}
+
 .break-container h3{
     font-size: 26px;
     text-transform: uppercase;
