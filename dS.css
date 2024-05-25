@@ -593,16 +593,16 @@ header ul li:hover .submenu a{
     margin-left: 210px;
   }
   #arrowRisks{
-    margin-left: 73px;
+    margin-left: 50px;
   }
   #arrowPain{
-    margin-left: 235px;
+    margin-left: 240px;
   }
   #arrowSafe{
-    margin-left: 320px;
+    margin-left: 335px;
   }
   #arrowRecovery{
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   .dropBTN:after {
