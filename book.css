@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*FONTS*/
+@font-face {
+    src: url(Services_fonts/Helvetica\ Neue\ LT\ Com\ 77\ Bold\ Condensed.ttf);
+    font-family: helvetica-neue; 
+  }
+@font-face {
+    src: url(Services_fonts/Raleway-Light.ttf);
+    font-family: raleway; /*HEADER*/
+  }
+@font-face {
+    src: url(Services_fonts/Calligraffitti-Regular.ttf);
+    font-family: callig; /*BIG TEXT - WHAT, HOW, WHO*/
+  } 
+@font-face {
+    src: url(Services_fonts/Roboto-Light.ttf);
+    font-family: roboto-light; /*FOR DESCRIPTIONS*/
+  }
+@font-face {
+    src: url(Services_fonts/NotoSansJP-Regular.ttf);
+    font-family: SansJP; /*DROPDOWN BUTTONS*/
+  }
+  html{
+    height: 100%;
+    scroll-behavior: smooth;
+
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #aeeeee;
+      overflow-x: hidden;
+      background-image: url(office1.jpeg);
+  }
+
+    /*APPOINTMENT STARTS HERE*/
+    .inner-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 147, 173, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        margin-left: 28%;
+        
+
+    }
+    main img{
+        width: 70px;
+        float: left;
+
+    }
+    .content h1, .content p{
+        font-family: SansJP;
+        margin-right: 30px;
+    }
+    .content-container {
+        flex: 1;
+        margin-right: 15px;
+    }
+    
+    .form-container {
+        flex: 1;
+        margin-left: 15px;
+    }
+    
+    .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .form-data {
+        background-color: #fff;
+        padding: 20px;
+    }
+    
+    .no-margin {
+        margin: 0;
+    }
+    
+    .form-body {
+        padding: 20px;
+    }
+    
+    .form-header {
+        padding: 20px;
+        font-family: SansJP;
+        text-align: center;
+    }
+    
+    .form-row {
+        margin-bottom: 15px;
+        font-family: SansJP;
+    }
+    .form-content {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: SansJp;
+    }
+
+    /* .btn-book {
+        width: 102%;
+        padding: 10px;
+        border: solid rgba(0, 147, 173, 0.9);
+        border-width: 2px;
+        background-color: #fff;
+        cursor: pointer;
+        font-family: raleway;
+        margin-left: 5px;
+        
+    } */
+
+    .form-body .form-row input[type="submit"] a{
+        text-decoration: none;
+        color: #000000;
+    }
+    #patient-query{
+        text-align: center;
+        padding-bottom: 10px;
+        font-family: SansJp;
+    }
+    .form-body .form-row input[type="submit"]:hover{
+        background-color:rgba(0, 147, 173, 0.9) ;
+        border: solid white;
+        border-width: 2px;
+        color: #fff;
+    }
+    .form-body .form-row input[type="submit"]{
+    width: 102%;
+    padding: 10px;
+    border: solid rgba(0, 147, 173, 0.9);
+    border-width: 2px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    }
+
+    
