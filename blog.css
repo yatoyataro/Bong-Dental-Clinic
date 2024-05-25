@@ -1,0 +1,509 @@
+/*header*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  height: 100%;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aeeeee; 
+}
+
+
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #00121b;
+    z-index: 3;
+  }
+  
+  header a{
+    color: aliceblue;
+    text-decoration: none;
+    
+  }
+  
+  header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  #logo-container a h1 {
+    margin-left: 2.0em;
+    margin-top: -1.5em;
+  
+  }
+  
+  header ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding-right: 20px;
+    margin-right: 0;
+    
+  }
+  
+  header ul li{
+    display: inline-block;
+    list-style: none;
+    height: 25px;
+  }
+  
+  
+  nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  } 
+  
+  header ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 10px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    margin-right: 3em;
+    height: 100%;
+  }
+  
+  nav ul li .submenu a{
+    display: flex;
+    margin-left: -40px;
+  }
+  
+  #active-nav { 
+    color: #ffffff;
+    align-items: center;
+    margin-left: 0px;
+    width: 105px;
+    height: 20px;
+    padding-top: 11px;
+    padding-right: 64px;
+    margin-right: -5px;
+  }
+  
+  #btn-nav{
+    margin-left: 0px;
+    margin-top: 13px;
+    background-color: #04879c;
+    border-radius: 2cm;
+    height: 100%;
+  }
+  
+  #btn-nav:hover{
+    transition: ease-in 0.3s;
+    background-color: white;
+    border-radius: 1cm;
+  }
+  
+  #btn-nav #link{
+  text-align: center;
+  margin-left: 30px;
+  
+  }
+  #btn-nav #hid{
+  opacity: 0;
+  }
+  
+  #btn-nav:hover a{
+    color: #00332c;
+  } 
+  
+  header ul li a:hover {
+    color: #1c8e7e;
+    border-radius: 2px;    
+  }
+  
+  /* submenu style */
+  header ul .submenu{
+    display: block;
+    position: fixed;
+    width: 200px;
+    box-shadow: 0px 0px 5px 3px #00000020;
+    margin-left: 0px;
+    opacity: 0;
+    z-index: -999;
+    visibility: hidden;
+    transition: all ease 0.2s;
+    color: white;
+    
+  }
+  
+  header ul .submenu li{
+    margin-top: -15px;
+    margin: 0;
+    width: 100%;
+  } 
+  
+  header ul .submenu li a{
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  header ul li .submenu:hover .dropdown{
+    visibility: visible;
+  
+  }
+  
+  header ul li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+    
+  }
+  .submenu li a:hover{
+    color: #00121b;
+  }
+  header ul li:hover .submenu a{
+    z-index: 99;
+    opacity: 100%;
+    margin-top:8px;
+    visibility: visible;
+    background-color: #04879c;
+  }
+  
+  /* Hide checkbox by default */
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle #fas{
+    display: none;
+  }
+  
+  #burger{
+    display: none;
+  }
+  
+  /* Style the burger menu */
+  
+  @media only screen and (max-width: 1060px) {
+  
+    #burger{
+        display: block;
+    }
+  
+    .nav-toggle-label {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    
+  } 
+  
+    /* Show burger menu and hide navigation links by default */
+    nav ul {
+      display: none;
+    }
+  
+    /* Style the burger menu */
+    .nav-toggle-label {
+      display: block;
+    }
+  
+    /* Show navigation links when the checkbox is checked */
+    #nav-toggle:checked ~ nav ul {
+        display: inline-table;
+        table-layout: fixed;
+        background: #005243;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 65px;
+        z-index: 2;
+        transition: right 0.5s;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+  
+    nav ul li{
+        margin-top: 20px;
+    }
+  
+    nav ul{
+        justify-content: center;
+        align-items: center;
+  
+    }
+  
+    #active-nav { 
+        color: #ffffff;
+        align-items: center;
+        margin-left: 55px;
+        width: 105px;
+        margin-top: 10px;
+        
+    }
+  
+  
+    
+    #btn-nav{
+        margin-top: 30px;
+        margin-left: -5px;
+        border-radius: 2cm;
+        height: 6%;
+    }
+  
+    #nav-toggle:checked ~ .nav-toggle-label{
+        margin-right: 175px;
+        z-index: 1000;
+    }
+  
+    /* Add transition for the sidebar animation */
+    nav ul {
+      transition: right 0.5s;
+    }
+  
+    header ul .submenu{
+        display: block;
+        position: fixed;
+        width: 200px;
+        box-shadow: 0px 0px 5px 3px #00000020;
+        margin-left: 0px;
+        margin-right: 215px;
+        opacity: 0;
+        z-index: -999;
+        visibility: hidden;
+        transition: all ease 0.2s;
+        color: white;
+  
+    }
+    header ul li:hover .submenu{
+        margin-top: 8px;
+    }
+  }
+  
+/* end */
+
+/*blog*/
+/**{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box; 
+}*/
+
+.container {
+	width: 100%;
+}
+
+.container .row {
+	width: 80%;
+	margin: auto;
+}
+
+.container .row .header {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+}
+.container .row .header h1{
+	padding-top: 30px;
+	font-size: 45px;
+	color: #347474;
+}
+.container .row .header p{
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #272343;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*repeat(auto-fill, minmax(300px, 1fr));*/
+    gap: 15px;
+    justify-items: center;
+}
+
+.content .card {
+    flex: 1;
+    margin: 0px 10px 15px; 
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #e3f6f5;	/*	#ededed;*/
+    max-width: 500px; 
+    border-radius: 10px; 
+    padding: 5px; 
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 999;
+    text-decoration: none;
+}
+.content .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.content .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content .card h4 {
+    margin: 10px; 
+    font-size: 18px;
+    color: #272343;
+}
+.content .card h4:hover {
+    text-decoration: underline;
+}
+
+.content .card p {
+    margin: 10px; 
+    font-size: 15px;
+    color: #272343;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+	.content{
+		flex-direction: column;
+	}
+}
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    background: #00121b;
+    display: block;
+  position: static;
+  bottom: 0;
+ }
+
+ .inner-footer {
+     width: 95%;
+     margin: auto;
+     padding: 30px 10px;
+     display: flex;
+     flex-wrap: wrap;
+     box-sizing: border-box;
+     justify-content: center;
+ }
+
+.footer-items {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer-items p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+    color: #fff;
+}
+
+.footer-items h1 {
+    color: #fff;
+}
+
+.border1 {
+    height: 3px;
+    width: 40px;
+    background: #04879c; 
+    color: #04879c;
+    background-color: #04879c; 
+    border: 0px;
+}
+
+.footer ul {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;  
+ }
+
+.footer ul a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer ul a:hover {
+    color: #04879c; /*rgb(43, 90, 138);*//*#0092ca;*/ /*#1e549f;*/ /*rgba(255, 97, 3, 1);*/
+}
+
+.footer ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+.footer li i {
+    margin-right: 20px;
+}
+
+.social-media {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i {
+    height: 25px;
+    width: 25px;
+    margin: 20px 10px;
+    padding: 4px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.social-media i:hover {
+    transform: scale(1.5);
+}
+
+.footer-bottom {
+    padding: 10px;
+    background: #00121b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+    .footer-items {
+        width: 50%;
+    }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+    .footer-items {
+        width: 100%;
+    }
+}
