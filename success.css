@@ -1,0 +1,75 @@
+/*FONTS*/
+@font-face {
+  src: url(Services_fonts/Helvetica\ Neue\ LT\ Com\ 77\ Bold\ Condensed.ttf);
+  font-family: helvetica-neue; 
+}
+@font-face {
+  src: url(Services_fonts/Raleway-Light.ttf);
+  font-family: raleway; /*HEADER*/
+}
+@font-face {
+  src: url(Services_fonts/Calligraffitti-Regular.ttf);
+  font-family: callig; /*BIG TEXT - WHAT, HOW, WHO*/
+} 
+@font-face {
+  src: url(Services_fonts/Roboto-Light.ttf);
+  font-family: roboto-light; /*FOR DESCRIPTIONS*/
+}
+@font-face {
+  src: url(Services_fonts/NotoSansJP-Regular.ttf);
+  font-family: SansJP; /*DROPDOWN BUTTONS*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aeeeee; 
+    background-image: url(office1.jpeg);
+}
+.inner-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 147, 173, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success{
+    font-size: 50px;
+    color: #fff;
+    font-family: SansJP;
+    margin-left: 5%;
+}
+#OK{
+  font-size: 22px;
+  font-family: raleway;
+}
+.btn-success{
+    width: 30%;
+    margin-left: 32%;
+    margin-top: 50px;
+    padding: 10px;
+    border: solid rgba(0, 0, 0, 0.9);
+    border-width: 1px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn-success a{
+    text-decoration: none;
+    color: #000000;
+    
+}
+.btn-success:hover{
+    background-color: rgba(22, 96, 107, 0.9);
+    border: solid #000000;
+    border-width: 1px;
+    color: #fff;
+}
+
