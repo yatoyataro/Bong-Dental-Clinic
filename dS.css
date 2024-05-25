@@ -590,10 +590,10 @@ header ul li:hover .submenu a{
     font-size: 20px;
   }
   #arrowBenefits{
-    margin-left: 210px;
+    margin-left: 205px;
   }
   #arrowRisks{
-    margin-left: 50px;
+    margin-left: 60px;
   }
   #arrowPain{
     margin-left: 240px;
@@ -602,7 +602,7 @@ header ul li:hover .submenu a{
     margin-left: 335px;
   }
   #arrowRecovery{
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .dropBTN:after {
