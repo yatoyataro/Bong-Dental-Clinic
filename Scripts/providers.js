@@ -1,11 +1,11 @@
 // start here
 
-let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
+let previewContainer = document.querySelector('.products-preview');
+let previewBox = previewContainer.querySelectorAll('.preview');
 
 document.querySelectorAll('.products-container .product .btn').forEach(btn =>{
   btn.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
+    previewContainer.style.display = 'flex';
     let name = btn.getAttribute('data-name');
     previewBox.forEach(preview =>{
       let target = preview.getAttribute('data-target');
@@ -19,6 +19,6 @@ document.querySelectorAll('.products-container .product .btn').forEach(btn =>{
 previewBox.forEach(close =>{
   close.querySelector('.fa-times').onclick = () =>{
     close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
+    previewContainer.style.display = 'none';
   };
 });
