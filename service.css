@@ -403,7 +403,8 @@ header ul li:hover .submenu a{
     /* service epekz */
   .service:hover {
     transform: scale(1.03); 
-    transition: 0.4s;
+    transition: ease-in 0.4s;
+    transition: ease-out 0.2s;
     filter: grayscale(0);
   }
      /* tittle each service */
@@ -448,6 +449,7 @@ header ul li:hover .submenu a{
 }
     /* button epekz*/
 .service .details-btn:hover {
+    transition:ease-in-out 0.3s;
     box-shadow: 0 0 12px #424d4d; 
     border-radius: 50px;
     font-weight: bold ;
