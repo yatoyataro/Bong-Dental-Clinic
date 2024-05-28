@@ -340,7 +340,7 @@ header ul li:hover .submenu a {
   width: auto;
   height: auto; 
   padding: 20px;
-  border: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   margin: 0;
   opacity: 0;
   animation: fadeInUp 2s ease-out forwards;
