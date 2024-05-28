@@ -398,7 +398,6 @@ header ul li:hover .submenu a{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    flex-basis: calc(33.33%- 20px);
     filter: grayscale(1);
     transition: all 0.4s ease;
 }
