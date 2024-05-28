@@ -344,6 +344,7 @@ header ul li:hover .submenu a {
   margin: 0;
   opacity: 0;
   animation: fadeInUp 2s ease-out forwards;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); ;
 }
 
 /*grid*/
