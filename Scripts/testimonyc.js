@@ -1,17 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var gridBoxes = document.querySelectorAll('.grid-box');
-
-    gridBoxes.forEach(function(gridBox) {
-        gridBox.addEventListener('mouseenter', function() {
-            gridBox.classList.add('hovered');
-        });
-
-        gridBox.addEventListener('mouseleave', function() {
-            gridBox.classList.remove('hovered');
-        });
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function() {
   const testimonies = document.querySelectorAll(".grid-container .grid-box");
   const showMoreButton = document.getElementById("show");
