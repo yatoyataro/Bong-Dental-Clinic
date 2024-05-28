@@ -377,10 +377,9 @@ header ul li:hover .submenu a{
   }
   
  
-    /* image epekz */
+    /* image */
 .container {
-    max-width: 100vw;
-    flex-wrap: wrap; 
+
     justify-content: space-between;
     display: flex;
     padding: 10px;
@@ -391,7 +390,7 @@ header ul li:hover .submenu a{
     height: 600px;
 }
 
-/* service border n blurr epekz */
+/* service border epekz */
 .service {
     font-family: sans-serif;
     font-weight: 100;
