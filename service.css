@@ -330,10 +330,12 @@ header ul li:hover .submenu a{
 /* main title*/
 
 .title{
+    font-family: 'Noto Serif JP', Georgia, "Times New Roman", serif;
+    text-shadow: 4px 6px 6px #000000;
     z-index: 1;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px; 
     text-transform:uppercase;
     padding: 15px;
