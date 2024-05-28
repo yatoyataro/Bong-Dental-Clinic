@@ -299,34 +299,6 @@ header ul li:hover .submenu a{
   }
  /* hanggang dito*/
 
-   /* da fonts */
-   @font-face {
-    font-family: "lemonmilk";
-    src: url("fonts/LEMONMILK.otf");
-    font-style: normal;
-    font-weight: 50;
-  }
-
-  @font-face {
-    font-family: "Groovy";
-    src: url("fonts/Groovy.ttf");
-    font-style: normal;
-    font-weight: 50;
-  }
-  @font-face {
-    font-family: "lost";
-    src: url("fonts/lost.otf");
-    font-style: normal;
-    font-weight: 50s;
-  }
-
-  @font-face {
-    font-family: "vogue";
-    src: url("fonts/Vogue.ttf");
-    font-style: normal;
-    font-weight: 50s;
-  }
-
 /* main title*/
 
 .title{
