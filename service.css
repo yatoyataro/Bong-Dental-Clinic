@@ -399,12 +399,12 @@ header ul li:hover .submenu a{
     border-radius: 20px;
     flex-basis: calc(33.33%- 20px);
     filter: grayscale(1);
+    transition: all 0.4s ease;
 }
     /* service epekz */
   .service:hover {
     transform: scale(1.03); 
-    transition: ease-in 0.4s;
-    transition: ease-out 0.2s;
+    transition: 0.4s;
     filter: grayscale(0);
   }
      /* tittle each service */
@@ -430,7 +430,7 @@ header ul li:hover .submenu a{
     border-radius: 5px;
 }
 
-     /* see more button n border */
+ /* see more button n border */
 .service .details-btn {
     font-family: sans-serif;
     font-weight: bold;
@@ -439,27 +439,24 @@ header ul li:hover .submenu a{
     padding: 14px 28px;
     background-color: lightblue;
     color: #030303;
-    border: solid rgb(0, 84, 139);
-    border-width: 5px;
+    border: 5px solid rgb(0, 84, 139); 
     text-decoration: none;
     text-align: center;
     width: 120px;
     border-radius: 5px;
     font-size: 20px;
+    transition: all 0.4s ease; /* Added transition for smoother hover effect */
 }
-    /* button epekz*/
+
 .service .details-btn:hover {
-    transition:ease-in-out 0.3s;
-    box-shadow: 0 0 12px #424d4d; 
+    box-shadow: 0 0 12px #424d4d;
     border-radius: 50px;
-    font-weight: bold ;
-    color: rgb(255, 255, 255);
-    transition: all 0.4s ease 0s;
+    color: #fff; 
     background-color: rgb(0, 84, 139);
     border-color: lightblue;
-    
 }
-    
+
+ 
 
  /* footer */
  .footer {
