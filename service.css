@@ -306,7 +306,6 @@ header ul li:hover .submenu a{
     text-shadow: 4px 6px 6px #000000;
     z-index: 1;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 25px; 
     text-transform:uppercase;
